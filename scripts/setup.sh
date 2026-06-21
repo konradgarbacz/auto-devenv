@@ -30,7 +30,8 @@ sudo nginx -t
 sudo systemctl restart nginx
 
 #build and run the container
-sudo docker build -t flask-app /home/$USER/bash-docker
+cd /home/$USER/bash-docker
+sudo docker build -t flask-app .
 sudo docker run -d -p 5000:5000 flask-app
 
 echo "Gotowe!"
