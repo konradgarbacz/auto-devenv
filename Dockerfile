@@ -1,5 +1,5 @@
 FROM python:3.12.13-alpine
-WORKDIR /Project-for-GitHub
+WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
