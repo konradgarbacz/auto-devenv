@@ -9,25 +9,33 @@ Simple Flask REST API containerized with Docker and served behind Nginx reverse 
 - Bash (automation)
 
 ## Project Structure
+```text
 bash-docker/
 ├── app.py
 ├── requirements.txt
 ├── Dockerfile
 └── scripts/
     └── setup.sh
+```
 
 ## How to run
 
 Clone the repository:
+```bash
 git clone https://github.com/konradgarbacz/bash-docker.git
 cd bash-docker
+```
 
 Run the setup script (installs Docker, Nginx, builds and starts the container):
+```bash
 bash scripts/setup.sh
+```
 
 ## Endpoints
-- GET / → returns JSON with status ok
-- GET /health → returns JSON with health status
+- `GET /` → returns JSON with status ok
+- `GET /health` → returns JSON with health status
 
 ## How it works
+```
 User → port 80 (Nginx) → port 5000 (Flask container)
+```
