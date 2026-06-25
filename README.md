@@ -97,7 +97,7 @@ You should see the nginx welcome page.
 ## Tech stack
 
 | Technology | Purpose |
-
+|---|---|
 | VMware Fusion | virtual machine |
 | Ubuntu Server 22.04 | VM operating system |
 | Bash | automation scripts |
