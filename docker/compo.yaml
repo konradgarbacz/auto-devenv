@@ -1,0 +1,11 @@
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8080:80"
+
+  db:
+    image: postgres
+
+  flask:
+    build: ./app/app.py
